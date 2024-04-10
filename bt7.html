@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let phoneBook = [];
+        let aContacts = (name, phone, email) => {
+            let contacts = { name, phone, email };
+            phoneBook.push(contacts);
+        };
+        let dContacts = () => {
+            if (phoneBook.length == 0) {
+                console.log("Danh bạ trống.");
+            } else {
+                console.log("Danh bạ:",phoneBook);
+            }
+        };
+        aContacts("Dung", "0886666731", "quang@gmail.com");
+        dContacts();
+    </script>
+</body>
+
+</html>

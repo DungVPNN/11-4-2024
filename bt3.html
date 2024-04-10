@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let typeConsole = (str = "log") =>{
+    if(str === "log"){
+        return console.log("Đây là type: log");
+    }
+    else if(str === "warm"){
+        return console.warn("Đây là type: warm");
+    }
+    else if(str === "error"){
+        return console.error("Đây là type: error");
+    }
+}
+typeConsole("log");
+typeConsole("warm");
+typeConsole("error");
+typeConsole();
+    </script>
+</body>
+</html>
